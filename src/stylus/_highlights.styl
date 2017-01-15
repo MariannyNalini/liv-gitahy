@@ -1,14 +1,26 @@
 #highlight_posts
-  div.highlight
-  	border solid 1px red
-  	col(1/3, cycle: 3)
-  	img
-  		width 100%
-  col(2/3)
+  col(9/12)
+  h2
+  	display table
+  	text-align center
+  	color #57b1a8
+  	margin 0 auto
+  	border solid 1px #57b1a8
+  	padding 5px 10px
+  	letter-spacing 2px
+  	text-transform uppercase
+  .post-list
+	  .highlight
+	  	col(1/3, cycle: 3)
+	  	img
+	  		width 100%
+	  	h3
+	  		color #57b1a8
+	  		text-transform uppercase
+	  		letter-spacing 2px
 #side_ads
+	col(3/12)
 	+desktop()
 		margin-right 0
-	border solid 1px green
-	col(1/3)
 	img
 		width 100%
