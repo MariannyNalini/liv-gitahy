@@ -1,0 +1,110 @@
+.form-wrapper
+  div.contact-form
+    a.bt-close-form X
+    form
+      input(type="hidden", class="consorcios-field", name="consorcios", value="61")
+      input(type="hidden", class="marca-field", name="marca", value="Hyundai")
+      input(type="hidden", class="font-field", name="fonte", value="Landing Consórcios Hyundai")
+        
+      div.form-step.step-1
+        p.step-title Faça uma simulação e fique mais perto do seu sonho
+
+        span.break
+
+        p.description Escolha as opções que mais se encaixam com o perfil de consórcio que deseja.
+
+        .row
+          label Selecione uma faixa de crédito
+
+          select(name="faixa", class="faixa-field")
+            option(value="") Selecione o valor
+
+        .row
+          label Escolha o valor do crédito
+
+          select(class="credit-field", name="credit")
+            option(value="") Selecione o valor
+
+        .row
+          label Escolha o número de parcelas
+
+          select(name="parcel", class="parcel-field")
+            option(value="") Selecione as parcelas
+            option(value="60x") 60x
+            option(value="70x") 70x
+            option(value="80x") 80x
+
+          //- label.parcel
+          //-   span.value 60x
+          //-   input(type="radio", name="parcel", class="parcel-field", value="60x")
+          //- label.parcel
+          //-   span.value 70x
+          //-   input(type="radio", name="parcel", class="parcel-field", value="70x")
+          //- label.parcel
+          //-   span.value 80x
+          //-   input(type="radio", name="parcel", class="parcel-field", value="80x")
+
+        .row
+          button.bt-action.bt-step Simule
+
+      div.form-step.step-2
+        p.step-title Resumo da sua simulação
+
+        div.credit-info
+          //- div.credit-col.credit-faixa
+          //-   span.label Faixa de crédito
+          //-   span.value.label-faixa R$0 a R$0
+
+          div.credit-col
+            span.label Valor do crédito
+            span.value.label-credit R$0
+
+          div.credit-col
+            span.label Nº de parcelas
+            span.value.label-parcel 0
+
+          div.credit-col
+            span.label Valor da parcela
+            span.value.label-value 0
+
+        p.step-title Envie para nossos corretores e receba uma proposta
+
+        div.form-container
+          .row
+            div.half
+              input(type="text", name="nome", placeholder="Nome", class="nome-field")
+            div.half
+              input(type="text", name="email", placeholder="Email", class="email-field")
+          .row
+            div.third
+              input(type="tel", name="cpf", placeholder="CPF", class="cpf-field")
+            div.third
+              input(type="tel", name="telefone",  placeholder="Telefone", class="telefone-field")
+            div.third
+              .loading-input
+              input(type="tel", name="cep", placeholder="CEP", class="cep-field")
+          .row
+            div.half
+              select(name="uf", class="uf-field")
+                option(value="") UF
+            div.half
+              input(type="text", name="cidade", placeholder="Cidade", class="cidade-field")
+              //- select(name="cidade", class="")
+              //-   option Cidade
+          .row.end-form
+            div.half
+              button.bt-action.bt-send Enviar
+            div.half
+              span.status
+
+      div.form-step.step-3
+        h3 Obrigado por entrar em contato!
+        .ico-check
+          i.fa.fa-check
+        p Em breve você receberá o contato de um de nossos consultores.
+        a(href="#", class="bt-reset") Fazer uma nova simulação
+
+
+    span.warning Valores sujeitos à alteração sem aviso prévio. Imagens meramente ilustrativas.
+      br
+      | Incluso taxa administrativa. Consulte grupos disponíveis.

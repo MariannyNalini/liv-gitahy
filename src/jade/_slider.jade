@@ -1,0 +1,44 @@
+div.container.slider-container
+	div.bt-slider.bt-next
+		span.arrow
+	div.bt-slider.bt-back
+		span.arrow
+
+	ul.slider
+		li
+			div
+				picture
+					source(srcset="/images/slider/image_0_mobile.jpg", media="(max-width: 1000px)")
+					img.bg-image(srcset="/images/slider/image_0.jpg")
+				div.info
+					img.prod-logo(src="/images/slider/logo_0.png")
+					p.slogan Consórcios Hyundai
+					hr
+					div.info-price
+						p.parcel Parcelas mensais a partir de
+						br
+						span.price R$ 386,53
+						br
+						span.tax Sem juros
+					a.bt-cta(onClick="ga('send', 'event', 'LP Hyundai', 'Faça agora sua Simulação', 'ancora'); ga('newTracker.send', 'event', 'LP Hyundai', 'Faça agora sua Simulação', 'ancora');") Faça agora sua simulação
+		li
+			div
+				picture
+					source(srcset="/images/slider/image_1_mobile.jpg", media="(max-width: 1000px)")
+					img.bg-image(srcset="/images/slider/image_1.jpg")
+				div.info
+					p.slogan.sloganTitle 
+						| Sonho Planejado,
+						br
+						| Sonho Realizado
+					hr
+		li
+			div
+				picture
+					source(srcset="/images/slider/image_3_mobile.jpg", media="(max-width: 1000px)")
+					img.bg-image(srcset="/images/slider/image_3.jpg")
+				div.info.info-2
+					img(src="/images/slider/logo_3.png", width="85%")
+					p.slogan.sloganDescription Aproveite as melhores condições de consórcios para você conquistar o seu Hyundai!
+					div.info-price.info-price-2
+					a.bt-cta(onClick="ga('send', 'event', 'LP Hyundai', 'Faça agora sua Simulação', 'ancora'); ga('newTracker.send', 'event', 'LP Hyundai', 'Faça agora sua Simulação', 'ancora');") Faça agora sua simulação		

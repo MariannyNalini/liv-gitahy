@@ -16,3 +16,13 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+
+.DS_Store
+bower_components
+public/index.html
+public/index.css
+public/index.js
+node_modules
+public/images/*
+public/favicons/*
+
